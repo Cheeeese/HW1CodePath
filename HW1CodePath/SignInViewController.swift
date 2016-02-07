@@ -28,11 +28,6 @@ class SignInViewController: UIViewController {
     // let frame = (notification.userInfo![UIKeyboardFrameEndUserInfoKey] as! NSValue).CGRectValue()
     
     
-    @IBAction func didTap(sender: AnyObject) {
-        view.endEditing(true) 
-    }
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -53,6 +48,10 @@ class SignInViewController: UIViewController {
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+    }
+    
+    @IBAction func didTap(sender: AnyObject) {
+        view.endEditing(true)
     }
     
 

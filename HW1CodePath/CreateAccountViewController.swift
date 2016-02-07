@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  CreateAccountViewController.swift
 //  HW1CodePath
 //
 //  Created by Matthew Verghese on 2/6/16.
@@ -8,12 +8,11 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class CreateAccountViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    performSegueWithIdentifier("firstCreateAccountSegue",sender:self)
-        
+
         // Do any additional setup after loading the view.
     }
 

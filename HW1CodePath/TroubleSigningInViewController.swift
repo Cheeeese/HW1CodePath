@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  TroubleSigningInViewController.swift
 //  HW1CodePath
 //
 //  Created by Matthew Verghese on 2/6/16.
@@ -8,11 +8,10 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class TroubleSigningInViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    performSegueWithIdentifier("firstCreateAccountSegue",sender:self)
         
         // Do any additional setup after loading the view.
     }
@@ -22,7 +21,14 @@ class CreateAccountRootViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBOutlet weak var troubleSignInCancelButton: UIButton!
 
+    @IBAction func troubleSignInCancel(sender: AnyObject) {
+
+        navigationController!.popViewControllerAnimated(true)
+    }
+    
+    
     /*
     // MARK: - Navigation
 

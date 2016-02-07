@@ -9,9 +9,12 @@
 import UIKit
 
 class SignInRootViewController: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        performSegueWithIdentifier("firstSignInSegue",sender:self) 
 
         // Do any additional setup after loading the view.
     }

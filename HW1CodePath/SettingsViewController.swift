@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  SettingsViewController.swift
 //  HW1CodePath
 //
 //  Created by Matthew Verghese on 2/6/16.
@@ -8,12 +8,14 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class SettingsViewController: UIViewController {
+
+    @IBOutlet weak var settingsScrollView: UIScrollView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-    performSegueWithIdentifier("firstCreateAccountSegue",sender:self)
-        
+
+        settingsScrollView.contentSize = CGSize(width: 320, height: 800)
         // Do any additional setup after loading the view.
     }
 

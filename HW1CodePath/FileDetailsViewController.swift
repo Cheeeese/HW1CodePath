@@ -1,5 +1,5 @@
 //
-//  CreateAccountRootViewController.swift
+//  FileDetailsViewController.swift
 //  HW1CodePath
 //
 //  Created by Matthew Verghese on 2/6/16.
@@ -8,12 +8,19 @@
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class FileDetailsViewController: UIViewController {
 
+    @IBAction func onFavoriteButton(sender: UIButton) {
+        sender.selected = true
+}
+    
+    @IBAction func onFavoriteButtonPress(sender: UIButton) {
+//
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    performSegueWithIdentifier("firstCreateAccountSegue",sender:self)
-        
+
         // Do any additional setup after loading the view.
     }
 

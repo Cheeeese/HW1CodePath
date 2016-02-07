@@ -1,18 +1,21 @@
 //
-//  CreateAccountRootViewController.swift
+//  SwipeWelcomeScreensViewController.swift
 //  HW1CodePath
 //
-//  Created by Matthew Verghese on 2/6/16.
+//  Created by Matthew Verghese on 2/7/16.
 //  Copyright (c) 2016 Cheeeese. All rights reserved.
 //
 
 import UIKit
 
-class CreateAccountRootViewController: UIViewController {
+class SwipeWelcomeScreensViewController: UIViewController {
 
+    @IBOutlet weak var welcomeScrollView: UIScrollView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-    performSegueWithIdentifier("firstCreateAccountSegue",sender:self)
+        
+        welcomeScrollView.contentSize = CGSize(width: 960, height: 568)
         
         // Do any additional setup after loading the view.
     }

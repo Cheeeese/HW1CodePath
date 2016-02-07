@@ -13,6 +13,12 @@
 		44187FD11C66744A00765878 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44187FD01C66744A00765878 /* Images.xcassets */; };
 		44187FD41C66744A00765878 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 44187FD21C66744A00765878 /* LaunchScreen.xib */; };
 		44187FE01C66744A00765878 /* HW1CodePathTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44187FDF1C66744A00765878 /* HW1CodePathTests.swift */; };
+		441DC85B1C66B99A0081265D /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441DC85A1C66B99A0081265D /* SignInViewController.swift */; };
+		441DC85D1C66B9A90081265D /* CreateAccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441DC85C1C66B9A90081265D /* CreateAccountViewController.swift */; };
+		441DC85F1C66C93B0081265D /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441DC85E1C66C93B0081265D /* SettingsViewController.swift */; };
+		441DC8611C66DD510081265D /* FileDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441DC8601C66DD510081265D /* FileDetailsViewController.swift */; };
+		441DC8631C66E35F0081265D /* TroubleSigningInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 441DC8621C66E35F0081265D /* TroubleSigningInViewController.swift */; };
+		4478887D1C67EEBD00126685 /* SwipeWelcomeScreensViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4478887C1C67EEBD00126685 /* SwipeWelcomeScreensViewController.swift */; };
 		449D25AD1C6683DE0084E973 /* CreateAccountRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D25AC1C6683DE0084E973 /* CreateAccountRootViewController.swift */; };
 		449D25AF1C6683F40084E973 /* SignInRootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 449D25AE1C6683F40084E973 /* SignInRootViewController.swift */; };
 /* End PBXBuildFile section */
@@ -38,6 +44,12 @@
 		44187FD91C66744A00765878 /* HW1CodePathTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HW1CodePathTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44187FDE1C66744A00765878 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44187FDF1C66744A00765878 /* HW1CodePathTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HW1CodePathTests.swift; sourceTree = "<group>"; };
+		441DC85A1C66B99A0081265D /* SignInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
+		441DC85C1C66B9A90081265D /* CreateAccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountViewController.swift; sourceTree = "<group>"; };
+		441DC85E1C66C93B0081265D /* SettingsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		441DC8601C66DD510081265D /* FileDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileDetailsViewController.swift; sourceTree = "<group>"; };
+		441DC8621C66E35F0081265D /* TroubleSigningInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TroubleSigningInViewController.swift; sourceTree = "<group>"; };
+		4478887C1C67EEBD00126685 /* SwipeWelcomeScreensViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwipeWelcomeScreensViewController.swift; sourceTree = "<group>"; };
 		449D25AC1C6683DE0084E973 /* CreateAccountRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateAccountRootViewController.swift; sourceTree = "<group>"; };
 		449D25AE1C6683F40084E973 /* SignInRootViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInRootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -84,8 +96,14 @@
 				44187FC91C66744A00765878 /* AppDelegate.swift */,
 				44187FCB1C66744A00765878 /* ViewController.swift */,
 				44187FCD1C66744A00765878 /* Main.storyboard */,
-				449D25AE1C6683F40084E973 /* SignInRootViewController.swift */,
+				4478887C1C67EEBD00126685 /* SwipeWelcomeScreensViewController.swift */,
+				441DC8621C66E35F0081265D /* TroubleSigningInViewController.swift */,
+				441DC8601C66DD510081265D /* FileDetailsViewController.swift */,
+				441DC85E1C66C93B0081265D /* SettingsViewController.swift */,
 				449D25AC1C6683DE0084E973 /* CreateAccountRootViewController.swift */,
+				449D25AE1C6683F40084E973 /* SignInRootViewController.swift */,
+				441DC85A1C66B99A0081265D /* SignInViewController.swift */,
+				441DC85C1C66B9A90081265D /* CreateAccountViewController.swift */,
 				44187FD01C66744A00765878 /* Images.xcassets */,
 				44187FD21C66744A00765878 /* LaunchScreen.xib */,
 				44187FC71C66744A00765878 /* Supporting Files */,
@@ -218,10 +236,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				441DC8631C66E35F0081265D /* TroubleSigningInViewController.swift in Sources */,
+				441DC85D1C66B9A90081265D /* CreateAccountViewController.swift in Sources */,
 				449D25AF1C6683F40084E973 /* SignInRootViewController.swift in Sources */,
+				441DC85F1C66C93B0081265D /* SettingsViewController.swift in Sources */,
+				4478887D1C67EEBD00126685 /* SwipeWelcomeScreensViewController.swift in Sources */,
 				449D25AD1C6683DE0084E973 /* CreateAccountRootViewController.swift in Sources */,
 				44187FCC1C66744A00765878 /* ViewController.swift in Sources */,
+				441DC85B1C66B99A0081265D /* SignInViewController.swift in Sources */,
 				44187FCA1C66744A00765878 /* AppDelegate.swift in Sources */,
+				441DC8611C66DD510081265D /* FileDetailsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
